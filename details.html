@@ -1,19 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/details.css">
-    <title>Image Details</title>
-    
+    <link rel="stylesheet" href="css/index.css">
+    <title>Daily Minimal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
 </head>
 <body>
+<header class="header">
+
+        <!-- Left side -->
+        <h1>Daily minimal</h1>
+
+        <!-- Right side (hamburger) -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header>
+
+    <!-- Dropdown Menu -->
+    <div class="menu" id="menu">
+      <a href="#">Projects</a>
+      <a href="#">Reads</a>
+      <a href="#">News</a>
+      <a href="#">About us</a>
+      <a href="#">Contact</a>
+
+    </div>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+
+<!--                               carosal                               -->
 <div class="container">
     
-       <img id="detailImage" src="" class="detail-img">
-       <h1 id="title" class="Title"></h1>
-        <p id="description"></p>       
-
-    <!-- <a href="index.html">⬅ Back</a> -->
+       
+      
+    
 </div>
+
+        <!-- <img id="detailImage" src="" class="detail-img">
+        <h1 id="title" class="Title"></h1>
+        <p id="description"></p>        -->
+
+        <h1>under the development</h1>
+        <a href="index.html">⬅ Back</a>
+
 
 <script>
     const params = new URLSearchParams(window.location.search);
@@ -81,10 +125,19 @@
 
     const info = data[id];
 
-    document.getElementById("detailImage").src = info.img;
-    document.getElementById("title").innerText = info.title;
-    document.getElementById("description").innerText = info.desc;
+// update main slide
+document.getElementById("detailImage").src = info.img;
+
+// update other two slides with same image
+const otherSlides = document.querySelectorAll(".carousel-item img:not(#detailImage)");
+
+otherSlides.forEach(img => {
+    img.src = info.img;
+});
+document.getElementById("title").innerText = info.title;
+document.getElementById("description").innerText =info.desc;
 </script>
+
 
 </body>
 </html>
