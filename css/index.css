@@ -66,13 +66,23 @@
 }
 
 .menu a:hover {
-  /* background: #555; */
   color: blue;
 }
 
 /* Show menu when active */
 .menu.active {
-  display: flex;
+   display: flex;         /* hidden by default */
+  position: fixed;       /* covers entire screen */
+  top: 0;
+  left: 0;
+  width: 100vw;          /* full width */
+  height: 100vh;         /* full height */
+  background: white; /* semi-transparent black */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  font-size: 25px;
 }
     /* --------------------------------------------------------- Navbar end --------------------------------------- */
 
