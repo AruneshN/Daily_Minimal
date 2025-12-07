@@ -156,7 +156,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
+    
   }
 
     /* Hide hamburger on laptop */
@@ -211,11 +211,6 @@
     grid-template-columns: repeat(4,1fr);
     margin: 20px auto;
     gap: 20px;
-
-    border: 1px solid black;
-
-    
-
 }
 
 .master-img-container{
