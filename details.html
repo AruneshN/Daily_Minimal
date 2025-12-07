@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
 
-    <link rel="stylesheet" href="css/details.css">
+
     <link rel="stylesheet" href="css/index.css">
-    <title>Daily Minimal</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/details.css">
 
+    <title>Daily minimal</title>
+    
 </head>
 <body>
-<header class="header">
+      <header class="dm-header">
 
         <!-- Left side -->
         <h1>Daily minimal</h1>
@@ -22,16 +25,24 @@
             <span></span>
         </div>
 
-    </header>
-
-    <!-- Dropdown Menu -->
-    <div class="menu" id="menu">
-      <a href="#">Projects</a>
+        <div class="desk-view-menu">
+      <a href="index.html">Projects</a>
       <a href="#">Reads</a>
       <a href="#">News</a>
       <a href="#">About us</a>
       <a href="#">Contact</a>
+    </div>
 
+
+    </header>
+
+    <!-- Dropdown Menu -->
+    <div class="menu" id="menu">
+      <a href="index.html">Projects</a>
+      <a href="#">Reads</a>
+      <a href="#">News</a>
+      <a href="#">About us</a>
+      <a href="#">Contact</a>
     </div>
 
     <script>
@@ -43,21 +54,35 @@
         });
     </script>
 
-<!--                               carosal                               -->
-<div class="container">
-    
-       
-      
-    
+
+   <!--                               carosal                               -->
+
+<div class="canva-projects">
+    <img id="detailImage" src="" class="detail-img">
 </div>
 
-        <!-- <img id="detailImage" src="" class="detail-img">
-        <h1 id="title" class="Title"></h1>
-        <p id="description"></p>        -->
+</script>
+<!-- body -->
+ <div class="canva-body">
+    <h1 id="title" class="canva-Title"></h1>
+<p id="description" class="canva-description"></p>               
+ </div>
+<!-- drawings -->
+ <div class="canva-drawings">
+    <img id="drawing1" src="" alt="Drawing 1" class="detail-img" style="height: 659px;"> 
+ </div>
 
-        <h1>under the development</h1>
-        <a href="index.html">⬅ Back</a>
+ <div class="canva-drawings">
+    <img id="drawing2" src="" alt="Drawing 1" class="detail-img" style="height: 659px;"> 
+ </div>
 
+ <div class="canva-drawings">
+    <img id="drawing3" src="" alt="Drawing 1" class="detail-img" style="height: 659px;"> 
+ </div>
+
+ <div class="canva-drawings">
+    <img id="drawing4" src="" alt="Drawing 1" class="detail-img" style="height: 659px;"> 
+ </div>
 
 <script>
     const params = new URLSearchParams(window.location.search);
@@ -68,67 +93,114 @@
         1: {
             img: "img/asian games village.jpeg",
             title: "asian games village",
-            desc: " Asian Games Village in New Delhi, which was built for the 1982 Asian Games. The village was designed by architect Raj Rewal and is now a residential neighborhood in the Siri Fort area. Images would show the architecture, layout, and the residential complex. "
+            desc: " Asian Games Village in New Delhi, which was built for the 1982 Asian Games. The village was designed by architect Raj Rewal and is now a residential neighborhood in the Siri Fort area. Images would show the architecture, layout, and the residential complex. Asian Games Village is one of the most desirable and posh areas of New Delhi, as it is surrounded by the lush green spaces of Siri Fort Ridge and located next to the Siri Fort sports complex, which hosted the squash and badminton tournaments during the 2010 Commonwealth Games. A simple 2 BHK flat here is priced at USD 1 million, with full-fledged bungalows starting at USD 4 million. The hierarchy of Courtyards is present at different levels of the complex. The complex consists of 700 housing units, out of which 200 were individual houses and 500 apartments, which vary from 2 to 4-story structures.",
+            drawing1:"img/asiangamevillages/images1.jpg",
+            drawing2:"img/asiangamevillages/images2.jpg",
+            drawing3:"img/asiangamevillages/images3.jpg",
+            drawing4:"img/asiangamevillages/images4.jpg",
+        
         },
         2: {
             img: "img/Bharat Bhavan.jpeg",
             title: "Bharat Bhavan",
-            desc: "Bharat Bhavan is an autonomous multi-arts complex and museum in Bhopal, India, established and funded by the Government of Madhya Pradesh.The architect of the Bharat Bhavan is Charles Correa. Opened in 1982, facing the Upper Lake, Bhopal, it houses multiple art galleries, a graphic printing workshop, a ceramics workshop, an open-air amphitheatre, a studio theatre, an auditorium, a museum of tribal & folk art, and libraries of Indian poetry, classical music & folk music."
+            desc: "Bharat Bhavan is an autonomous multi-arts complex and museum in Bhopal, India, established and funded by the Government of Madhya Pradesh.The architect of the Bharat Bhavan is Charles Correa. Opened in 1982, facing the Upper Lake, Bhopal, it houses multiple art galleries, a graphic printing workshop, a ceramics workshop, an open-air amphitheatre, a studio theatre, an auditorium, a museum of tribal & folk art, and libraries of Indian poetry, classical music & folk music.",
+              drawing1:"img/asiangamevillages/images1.jpg",
+            drawing2:"img/asiangamevillages/images2.jpg",
+            drawing3:"img/asiangamevillages/images3.jpg",
+            drawing4:"img/asiangamevillages/images4.jpg",
         },
         3: {
             img: "img/Brooklyn Bridge.jpeg",
             title: "Brooklyn Bridge",
-            desc: "The Brooklyn Bridge is a cable-stayed suspension bridge in New York City, spanning the East River between the boroughs of Manhattan and Brooklyn. Opened on May 24, 1883, the Brooklyn Bridge was the first fixed crossing of the East River. It was also the longest suspension bridge in the world when opened, with a main span of 1,595.5 feet (486.3 m) and a deck 127 ft (38.7 m) above mean high water. The span was originally called the New York and Brooklyn Bridge or the East River Bridge but was officially renamed the Brooklyn Bridge in 1915."
+            desc: "The Brooklyn Bridge is a cable-stayed suspension bridge in New York City, spanning the East River between the boroughs of Manhattan and Brooklyn. Opened on May 24, 1883, the Brooklyn Bridge was the first fixed crossing of the East River. It was also the longest suspension bridge in the world when opened, with a main span of 1,595.5 feet (486.3 m) and a deck 127 ft (38.7 m) above mean high water. The span was originally called the New York and Brooklyn Bridge or the East River Bridge but was officially renamed the Brooklyn Bridge in 1915.",
+              drawing1:"img/asiangamevillages/images1.jpg",
+            drawing2:"img/asiangamevillages/images2.jpg",
+            drawing3:"img/asiangamevillages/images3.jpg",
+            drawing4:"img/asiangamevillages/images4.jpg",
         },
         4: {
             img: "img/Embassy of Belgium.jpeg",
             title: "Embassy of Belgium",
-            desc: "The Embassy of Belgium in New Delhi is the diplomatic mission of the Kingdom of Belgium to India. The embassy is located at Shantipath, Chanakyapuri. The Embassy of Belgium in New Delhi covers the services for India, Sri Lanka, Bangladesh, the Maldives, Bhutan and Nepal.[1] Belgium also operates a consulate in Mumbai and Chennai. The Belgian ambassador to India is Didier Vanderhasselt."
+            desc: "The Embassy of Belgium in New Delhi is the diplomatic mission of the Kingdom of Belgium to India. The embassy is located at Shantipath, Chanakyapuri. The Embassy of Belgium in New Delhi covers the services for India, Sri Lanka, Bangladesh, the Maldives, Bhutan and Nepal.[1] Belgium also operates a consulate in Mumbai and Chennai. The Belgian ambassador to India is Didier Vanderhasselt.",
+             drawing1:"img/asiangamevillages/images1.jpg",
+            drawing2:"img/asiangamevillages/images2.jpg",
+            drawing3:"img/asiangamevillages/images3.jpg",
+            drawing4:"img/asiangamevillages/images4.jpg",
+        
         },
         5: {
             img: "img/Brooklyn Bridge.jpeg",
             title: "Brooklyn Bridge",
-            desc: "The Brooklyn Bridge is a cable-stayed suspension bridge in New York City, spanning the East River between the boroughs of Manhattan and Brooklyn. Opened on May 24, 1883, the Brooklyn Bridge was the first fixed crossing of the East River. It was also the longest suspension bridge in the world when opened, with a main span of 1,595.5 feet (486.3 m) and a deck 127 ft (38.7 m) above mean high water. The span was originally called the New York and Brooklyn Bridge or the East River Bridge but was officially renamed the Brooklyn Bridge in 1915."
+            desc: "The Brooklyn Bridge is a cable-stayed suspension bridge in New York City, spanning the East River between the boroughs of Manhattan and Brooklyn. Opened on May 24, 1883, the Brooklyn Bridge was the first fixed crossing of the East River. It was also the longest suspension bridge in the world when opened, with a main span of 1,595.5 feet (486.3 m) and a deck 127 ft (38.7 m) above mean high water. The span was originally called the New York and Brooklyn Bridge or the East River Bridge but was officially renamed the Brooklyn Bridge in 1915.",
+               drawing1:"img/asiangamevillages/images1.jpg",
+            drawing2:"img/asiangamevillages/images2.jpg",
+            drawing3:"img/asiangamevillages/images3.jpg",
+            drawing4:"img/asiangamevillages/images4.jpg",
         },
         6: {
             img: "img/Brooklyn Bridge.jpeg",
             title: "Brooklyn Bridge",
-            desc: "The Brooklyn Bridge is a cable-stayed suspension bridge in New York City, spanning the East River between the boroughs of Manhattan and Brooklyn. Opened on May 24, 1883, the Brooklyn Bridge was the first fixed crossing of the East River. It was also the longest suspension bridge in the world when opened, with a main span of 1,595.5 feet (486.3 m) and a deck 127 ft (38.7 m) above mean high water. The span was originally called the New York and Brooklyn Bridge or the East River Bridge but was officially renamed the Brooklyn Bridge in 1915."
+            desc: "The Brooklyn Bridge is a cable-stayed suspension bridge in New York City, spanning the East River between the boroughs of Manhattan and Brooklyn. Opened on May 24, 1883, the Brooklyn Bridge was the first fixed crossing of the East River. It was also the longest suspension bridge in the world when opened, with a main span of 1,595.5 feet (486.3 m) and a deck 127 ft (38.7 m) above mean high water. The span was originally called the New York and Brooklyn Bridge or the East River Bridge but was officially renamed the Brooklyn Bridge in 1915.",
+              drawing1:"img/asiangamevillages/images1.jpg",
+            drawing2:"img/asiangamevillages/images2.jpg",
+            drawing3:"img/asiangamevillages/images3.jpg",
+            drawing4:"img/asiangamevillages/images4.jpg",
         },
         7: {
             img: "img/Lotus temple.jpeg",
             title: "Lotus temple",
-            desc: "TThe Lotus Temple is a Bahá í House of Worship in New Delhi, India. It was completed in December 1986. Notable for its lotus-like shape, it has become a prominent attraction in the city. Like all Bahá’í Houses of Worship, the Lotus Temple is open to all people, regardless of religion or any other qualification. The building is composed of 27 free-standing marble-clad petals arranged in clusters of three to form nine sides,[1] with nine doors opening onto a central hall with a height of slightly over 34 metres[1] and a capacity of 1,300 people.[2] The Lotus Temple has won numerous architectural awards[3][4] and has been featured in many newspaper and magazine articles"
+            desc: "TThe Lotus Temple is a Bahá í House of Worship in New Delhi, India. It was completed in December 1986. Notable for its lotus-like shape, it has become a prominent attraction in the city. Like all Bahá’í Houses of Worship, the Lotus Temple is open to all people, regardless of religion or any other qualification. The building is composed of 27 free-standing marble-clad petals arranged in clusters of three to form nine sides,[1] with nine doors opening onto a central hall with a height of slightly over 34 metres[1] and a capacity of 1,300 people.[2] The Lotus Temple has won numerous architectural awards[3][4] and has been featured in many newspaper and magazine articles",
+            drawing1:"img/asiangamevillages/images1.jpg",
+            drawing2:"img/asiangamevillages/images2.jpg",
+            drawing3:"img/asiangamevillages/images3.jpg",
+            drawing4:"img/asiangamevillages/images4.jpg",
         },
         8: {
             img: "img/Palace assembly.jpeg",
             title: "Palace assembly",
-            desc: "The Palace of Assembly is a building in Chandigarh, India which houses the Punjab Legislative Assembly and the Haryana Legislative Assembly. It was designed by modernist architect Le Corbusier.[1][2] It is part of the Chandigarh Capitol Complex, which includes the Legislative Assembly, Secretariat and High Court.[3] The Palace of Assembly features a circular assembly chamber, a forum for conversation and transactions, and stair-free circulation."
+            desc: "The Palace of Assembly is a building in Chandigarh, India which houses the Punjab Legislative Assembly and the Haryana Legislative Assembly. It was designed by modernist architect Le Corbusier.[1][2] It is part of the Chandigarh Capitol Complex, which includes the Legislative Assembly, Secretariat and High Court.[3] The Palace of Assembly features a circular assembly chamber, a forum for conversation and transactions, and stair-free circulation.",
+             drawing1:"img/asiangamevillages/images1.jpg",
+            drawing2:"img/asiangamevillages/images2.jpg",
+            drawing3:"img/asiangamevillages/images3.jpg",
+            drawing4:"img/asiangamevillages/images4.jpg",
         },
         9: {
             img: "img/Rashtrapati Bhavan.jpeg",
             title: "Rashtrapati Bhavan",
-            desc: "The building was designed by Edwin Lutyens and Herbert Baker in Delhi Order based on Indo-Saracenic architecture. The construction began in 1912 and the building was completed in 1929. The building was called as Viceroy's house after the Viceroy of India occupied the building in 1931. After Indian independence, it briefly served as the Government House, which housed the Governor General of India from 1947 to 1950. When India became a republic, it became the residence of the president of India, and was rechristened as Rashtrapati Bhavan."
+            desc: "The building was designed by Edwin Lutyens and Herbert Baker in Delhi Order based on Indo-Saracenic architecture. The construction began in 1912 and the building was completed in 1929. The building was called as Viceroy's house after the Viceroy of India occupied the building in 1931. After Indian independence, it briefly served as the Government House, which housed the Governor General of India from 1947 to 1950. When India became a republic, it became the residence of the president of India, and was rechristened as Rashtrapati Bhavan.",
+             drawing1:"img/asiangamevillages/images1.jpg",
+            drawing2:"img/asiangamevillages/images2.jpg",
+            drawing3:"img/asiangamevillages/images3.jpg",
+            drawing4:"img/asiangamevillages/images4.jpg",
         },
         10: {
             img: "img/World Trade Centre.jpeg",
             title: "World Trade Centre",
-            desc: "The Rashtrapati Bhavan is the official residence of the president of India, located at the western end of Rajpath, Raisina Hill in New Delhi. The building was designed by Edwin Lutyens and Herbert Baker in Delhi Order based on Indo-Saracenic architecture. Wikipedia"
+            desc: "The Rashtrapati Bhavan is the official residence of the president of India, located at the western end of Rajpath, Raisina Hill in New Delhi. The building was designed by Edwin Lutyens and Herbert Baker in Delhi Order based on Indo-Saracenic architecture. Wikipedia",
+            drawing1:"img/asiangamevillages/images1.jpg",
+            drawing2:"img/asiangamevillages/images2.jpg",
+            drawing3:"img/asiangamevillages/images3.jpg",
+            drawing4:"img/asiangamevillages/images4.jpg",
         },
         11: {
             img: "img/Ravindra Natya Mandir.jpg",
             title: "Ravindra Natya Mandir",
-            desc: "The Rashtrapati Bhavan is the official residence of the president of India, located at the western end of Rajpath, Raisina Hill in New Delhi. The building was designed by Edwin Lutyens and Herbert Baker in Delhi Order based on Indo-Saracenic architecture. Wikipedia"
+            desc: "The Rashtrapati Bhavan is the official residence of the president of India, located at the western end of Rajpath, Raisina Hill in New Delhi. The building was designed by Edwin Lutyens and Herbert Baker in Delhi Order based on Indo-Saracenic architecture. Wikipedia",
+              drawing1:"img/asiangamevillages/images1.jpg",
+            drawing2:"img/asiangamevillages/images2.jpg",
+            drawing3:"img/asiangamevillages/images3.jpg",
+            drawing4:"img/asiangamevillages/images4.jpg",
         }
    
     };
 
+
     const info = data[id];
 
-// update main slide
+
 document.getElementById("detailImage").src = info.img;
 
-// update other two slides with same image
+
 const otherSlides = document.querySelectorAll(".carousel-item img:not(#detailImage)");
 
 otherSlides.forEach(img => {
@@ -136,8 +208,28 @@ otherSlides.forEach(img => {
 });
 document.getElementById("title").innerText = info.title;
 document.getElementById("description").innerText =info.desc;
+
+
+ document.getElementById("drawing1").src = info.drawing1;
+document.getElementById("drawing2").src = info.drawing2;
+document.getElementById("drawing3").src = info.drawing3;
+document.getElementById("drawing4").src = info.drawing4;
+
+ 
 </script>
+<footer class="social-footer">
+  <a href="https://www.instagram.com" target="_blank">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://www.facebook.com" target="_blank">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://www.youtube.com" target="_blank">
+    <i class="fab fa-youtube"></i>
+  </a>
+</footer>
 
-
+<!-- Add Font Awesome CDN in <head> to use icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </body>
 </html>
